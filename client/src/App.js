@@ -11,15 +11,15 @@ import Home from './pages/Home';
 import Login from './pages/Login';
 
 //COMPONENTS
-import Navbar from './components/Navbar';
+import Navbar from './components/partials/Navbar';
 
 //ASSETS
 
 function App() {
   return (
-    <div className="font-sans">
+    <div className="flex flex-col font-sans bg-black">
       <Router>
-        <Navbar />  
+        <Navbar />
         <Switch>
           <Route path='/' exact component={Home} />
           <Route path='/login' exact component={Login} />

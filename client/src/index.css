@@ -3,3 +3,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.showcase {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('https://assets.nflxext.com/ffe/siteui/vlv3/ccdffa88-3b61-4129-b22c-c6cd64027d99/50d4463c-0d18-4942-91ff-bc65079b2e44/BE-fr-20200803-popsignuptwoweeks-perspective_alpha_website_small.jpg');
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
