@@ -20,9 +20,9 @@ const Navbar = () => {
       </svg>
       <div>
         <select className='border-2 border-white mr-8 bg-black text-white'>
-          <option value="English">Français</option>
-          <option value="English">Nederlands</option>
           <option value="English">English</option>
+          <option value="Français">Français</option>
+          <option value="Nederlands">Nederlands</option>
         </select>
         <button className="bg-brand py-1 px-4 rounded-sm text-white">
           Sign In

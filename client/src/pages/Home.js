@@ -5,6 +5,8 @@ import React from 'react';
 //COMPONENTS
 import Showcase from '../components/Showcase';
 import Section from '../components/Section';
+import FAQ from '../components/FAQ';
+import Footer from '../components/partials/Footer';
 
 //ASSETS
 
@@ -50,6 +52,8 @@ const Home = () => {
       {SECTIONS.map((section) => (
         <Section section={section} />
       ))}
+      <FAQ />
+      <Footer />
     </>
   );
 };

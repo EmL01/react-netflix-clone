@@ -8,10 +8,10 @@ import React from 'react';
 const Newsletter = () => {
   return (
     <>
-      <p className="text-lg">
+      <p className="text-lg text-center">
         Ready to watch? Enter your email to create or restart your membership.
       </p>
-      <div className="flex w-full mt-4">
+      <div className="flex w-11/12 mx-auto mt-4">
         <input
           className="flex-1 px-2 py-5"
           type="text"
@@ -22,15 +22,13 @@ const Newsletter = () => {
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="h-8 w-8"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
+            viewBox="0 0 20 20"
+            fill="currentColor"
           >
             <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M9 5l7 7-7 7"
+              fillRule="evenodd"
+              d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+              clipRule="evenodd"
             />
           </svg>
         </button>
