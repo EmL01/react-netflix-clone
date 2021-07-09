@@ -1,11 +1,7 @@
 import React from 'react';
 
 function App() {
-  return (
-    <div className="App">
-      Netflix Clone
-    </div>
-  );
+  return <div className="font-sans">Netflix Clone</div>;
 }
 
 export default App;
