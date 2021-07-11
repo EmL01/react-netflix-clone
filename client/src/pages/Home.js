@@ -6,7 +6,7 @@ import React from 'react';
 import Showcase from '../components/Showcase';
 import Section from '../components/Section';
 import FAQ from '../components/FAQ';
-import Footer from '../components/partials/Footer';
+import Navbar from '../components/partials/Navbar';
 
 //ASSETS
 
@@ -48,12 +48,12 @@ const SECTIONS = [
 const Home = () => {
   return (
     <>
+      <Navbar absolute />
       <Showcase />
       {SECTIONS.map((section) => (
         <Section section={section} />
       ))}
       <FAQ />
-      <Footer />
     </>
   );
 };
