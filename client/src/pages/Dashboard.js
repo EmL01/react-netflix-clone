@@ -8,20 +8,19 @@ import Row from '../components/Row';
 
 //ASSETS
 
-import * as MOVIES from '../data/movies'
+import * as MOVIES from '../data/movies';
 
 const Dashboard = () => {
+  const { title, plot, posterUrl } =
+    MOVIES.default[Math.floor(Math.random() * MOVIES.default.length - 1)];
   return (
     <>
       <Navbar />
       <div className="h-96 relative text-white">
         <div className="h-full w-full absolute top-0 left-0 bg-gradient-to-r from-black to-black opacity-30" />
-        <img
-          className="h-full w-full object-cover"
-          src="https://assets.nflxext.com/ffe/siteui/vlv3/ccdffa88-3b61-4129-b22c-c6cd64027d99/50d4463c-0d18-4942-91ff-bc65079b2e44/BE-fr-20200803-popsignuptwoweeks-perspective_alpha_website_small.jpg"
-        />
+        <img className="h-full w-full object-cover" src={posterUrl} />
         <div className="absolute top-20 left-40 max-w-lg">
-          <h1 className="font-bold text-5xl">Movie name</h1>
+          <h1 className="font-bold text-5xl">{title}</h1>
           <div className="flex my-4">
             <button className="bg-gray-900 opacity-60 py-2 px-8 rounded-sm mr-2 hover:opacity-100">
               Play
@@ -30,17 +29,7 @@ const Dashboard = () => {
               My list
             </button>
           </div>
-          <p>
-            {truncate(
-              `This is the description of the movie. This is the description of the
-            movie. This is the description of the movie. This is the description
-            of the movie. This is the description of the movie. This is the
-            description of the movie. This is the description of the movie. This
-            is the description of the movie. This is the description of the
-            movie.`,
-              200
-            )}
-          </p>
+          <p>{truncate(plot, 200)}</p>
         </div>
       </div>
       <div className="m-4">
@@ -59,7 +48,7 @@ const Dashboard = () => {
 };
 
 const truncate = (string, n) => {
-    return string?.length > n ? string.substr(0, n - 1) + '...' : string
-}
+  return string?.length > n ? string.substr(0, n - 1) + '...' : string;
+};
 
 export default Dashboard;
